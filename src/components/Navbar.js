@@ -18,9 +18,9 @@ function Navbar() {
         }
     };
 
-useEffect( () => {
-    showButton()
-}, []);
+    useEffect( () => {
+        showButton()
+    }, []);
 
     window.addEventListener('resize', showButton);
 
@@ -37,7 +37,7 @@ useEffect( () => {
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
                             <Link to='/' className='nav-links' onClick={closeMobileMenu}> 
-                                Not Home 
+                                Home 
                             </Link>
                         </li>
                         <li className='nav-item'>
